@@ -8,18 +8,16 @@ const observer = new MutationObserver(function () {
 observer.observe(document, { childList: true, subtree: true })
 
 function main() {
-    window.setTimeout(inner, 3000);
+    window.setTimeout(inner, 5000);
     function inner(){
-        //二倍速
-        var x2 = document.querySelectorAll('[aria-label="2x speed"]');
-        for(let e of x2){
-            e.checked = true;
-            e.value = "true";
-        }
 
         // Start
         var start = document.getElementsByClassName("animation-controls");
         for(let e of start) e.querySelector("button").click();
+
+        // Faster
+        var x2 = document.querySelectorAll('[aria-label="2x speed"]');
+        for(let e of x2) e.click();
 
         // Continue
         var config = {
