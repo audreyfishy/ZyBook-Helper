@@ -6,6 +6,7 @@
 4. Turn on the `developer mode`.
 5. Drag the `src` folder into the page.
 6. Now do your reading in ZyBook, and you can see this user script automatically finish the slide stuff! 
+7. If it does not work, press `Fn + 5` or press button in Chrome to reload the page.
 
 ----
 
