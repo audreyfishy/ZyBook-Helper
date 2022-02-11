@@ -1,0 +1,15 @@
+{
+    "name": "Zybooks Breaker",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "description": "Obmit the clicks",
+    "permissions": ["activeTab", "tabs", "storage"],
+    "content_scripts": [{
+      "matches": ["https://learn.zybooks.com/zybook/UCSDCSE12Winter2022/chapter/*/section/*"],
+      "js": [
+        "main.user.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": true
+    }]
+  }
