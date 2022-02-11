@@ -5,7 +5,7 @@
     "description": "Obmit the clicks",
     "permissions": ["activeTab", "tabs", "storage"],
     "content_scripts": [{
-      "matches": ["https://learn.zybooks.com/zybook/UCSDCSE12Winter2022/chapter/*/section/*"],
+      "matches": ["https://learn.zybooks.com/zybook/*/chapter/*/section/*"],
       "js": [
         "main.user.js"
       ],
