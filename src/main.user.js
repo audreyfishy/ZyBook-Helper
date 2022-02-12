@@ -8,7 +8,7 @@ const observer = new MutationObserver(function () {
 observer.observe(document, { childList: true, subtree: true })
 
 function main() {
-    window.setTimeout(inner, 4000);
+    window.setTimeout(inner, 5000);
     function inner(){
 
         // Start
